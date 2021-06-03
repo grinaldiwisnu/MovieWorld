@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="card" type="id" />
+    <item name="user_score" type="id" />
+    <item name="date_release" type="id" />
+</resources>

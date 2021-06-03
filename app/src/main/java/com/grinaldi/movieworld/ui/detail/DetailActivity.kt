@@ -99,7 +99,6 @@ class DetailActivity : AppCompatActivity() {
 
     private fun showData(detail: Detail?) {
         detail?.let {
-            val rating = resources.getString(R.string.rating)
             with(binding) {
                 collapseToolbarConfiguration(it.title)
                 ivBigPoster.load(ImageUrl.getOriginalImageUrl(it.posterPath)) {
@@ -109,15 +108,8 @@ class DetailActivity : AppCompatActivity() {
                     crossfade(true)
                 }
                 tvTitle.text = it.title
-//                moviePopularity.text = it.popularity.toString()
-//                movieRating.text = String.format(rating, it.voteAverage)
                 tvOverview.text = it.overview
                 genreAdapter.setGenres(it.genres)
-//                overviewLabel.visibility = View.VISIBLE
-//                statusLabel.visibility = View.VISIBLE
-//                homepageLabel.visibility = View.VISIBLE
-//                popularityLabel.visibility = View.VISIBLE
-//                ratingLabel.visibility = View.VISIBLE
             }
         }
     }

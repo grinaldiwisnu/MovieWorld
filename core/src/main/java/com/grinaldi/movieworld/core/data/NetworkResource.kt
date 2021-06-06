@@ -4,7 +4,6 @@ import com.grinaldi.movieworld.core.data.source.remote.api.ApiResponse
 import com.grinaldi.movieworld.core.utils.Resource
 import kotlinx.coroutines.flow.*
 
-@Suppress("UNCHECKED_CAST")
 abstract class NetworkResource<ResultType, RequestType> {
     private val result: Flow<Resource<ResultType>> = flow {
         emit(Resource.Loading())

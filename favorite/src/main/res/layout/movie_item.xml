@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/card"
     android:layout_width="match_parent"
     android:layout_height="300dp"
@@ -13,7 +14,8 @@
     android:focusable="true"
     android:foreground="?attr/selectableItemBackground"
     app:cardCornerRadius="20dp"
-    app:cardMaxElevation="4dp">
+    app:cardMaxElevation="4dp"
+    tools:keep="@layout/movie_item">
 
     <FrameLayout
         android:layout_width="match_parent"

@@ -53,6 +53,6 @@ dependencies {
     api "androidx.lifecycle:lifecycle-livedata-ktx:2.3.1"
 
     //for database encrypt
-    implementation "net.zetetic:android-database-sqlcipher:4.4.0"
+    implementation "net.zetetic:android-database-sqlcipher:4.4.3"
     implementation "androidx.sqlite:sqlite-ktx:2.1.0"
 }

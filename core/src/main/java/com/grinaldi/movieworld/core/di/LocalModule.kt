@@ -22,7 +22,7 @@ val localModule = module {
         )
             .addTypeConverter(GenreConverter())
             .fallbackToDestructiveMigration()
-            .addTypeConverter(factory)
+            .openHelperFactory(factory)
             .build()
     }
 
